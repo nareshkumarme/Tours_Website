@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+    
+  margin: 2rem 0;
+  transition: var(--transition);
+  background-color: rgb(248, 246, 242);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+
+main {
+  width: 90vw;
+  max-width: 550px;
+  margin: 3rem auto;
+}
+
+h1{
+
+  text-align: center;
+}
+
+.tour-container{
+  list-style: none;
+  background-color: rgb(248, 246, 242);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.tour-info{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.tour-price{
+  background-color: aqua;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.footer-btn{
+color: rgb(186, 14, 14);
+font-family: 'Times New Roman', Times, serif;
+background-color: transparent;
+border: 1.5px solid red;
+padding: 5px 20px;
+cursor: pointer;
+margin-left: 170px;
+border-radius: px;
+  
+}
+
+.info-btn{
+  background-color:transparent;
+  border: none;
+  color: red;
+}
+
+
+div h1{
+  text-align: center;
+  
+}
+
+.btn{
+  margin-left: 44%;
+  background-color: rgb(103, 206, 235);
+  border-color: transparent;
+  border-radius: 2px;
+}
+
+.Loading{
+  text-align: center;
 }
