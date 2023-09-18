@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 
 
 const Tour = ({tour,removeTour}) => {
-
-   const [readmore , setReadmore] = useState(false)
+  const [expanded, setExpanded] = useState(false);
+  const [readmore , setReadmore] = useState(false)
     const {id,image,name,price,info} = tour;
    
     return (
@@ -16,11 +16,11 @@ const Tour = ({tour,removeTour}) => {
         <h3 className='tour-name'>{name}</h3>
         <p className='tour-price'>${price}</p>
         </div>
-      <p>{readmore? info:`${info.substring(0,200)}...`}
+      <p className={expanded ? 'expanded' : ''}>{readmore? info:`${info.substring(0,200)}...`}
       <button className='info-btn' onClick={() => setReadmore(!readmore)}>{readmore? `See Less`:`Read More`}</button>
       </p>
        
-       <button onClick={() =>removeTour(id)}  className='footer-btn'>Not Intrested</button>
+       <button onClick={() =>removeTour(id)}  className='footer-btn'>Not Interested</button>
        </footer>
       
       

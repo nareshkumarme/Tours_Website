@@ -4,8 +4,8 @@ import Tour from './Tour'
 const Tours = ({tours,removeTour}) => {
   
   return (
-    <>
-      <ul>
+    <section>
+      <ul className='tour-grid'>
         {
             tours.map(tour => {
 
@@ -17,7 +17,7 @@ return  (
 })
         }
       </ul>
-      </>
+      </section>
   )
 }
 
